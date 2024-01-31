@@ -39,9 +39,8 @@ def find_min_coins(sum_: int):
 
 
 def test_find_coins_greedy(data_set, func):
-    results = []
     for data in data_set:
-        results.append(func(data))
+        func(data)
 
 
 if __name__ == "__main__":
@@ -54,11 +53,20 @@ if __name__ == "__main__":
         lambda: test_find_coins_greedy(data_set[:], find_min_coins), number=10
     )
 
-    print(f"{'|Algorithm': <21} | {'Time to complete': <20}|")
+    print(f"{'|Алгоритм': <21} | {'Час на виконання': <20}|")
     print(f"|{'-'*20} | {'-'*20}|")
     print(f"|{'Greedy': <20} | {time_for_greedy: <20.5f}|")
     print(f"|{'Min coins': <20} | {time_for_min_coins: <20.5f}|")
 
     print(
-        f"\nGreedy is {time_for_min_coins / time_for_greedy:.2f} times faster than min coins"
+        f"\nGreedy в {time_for_min_coins / time_for_greedy:.2f} разів швидший за Min coins."
+    )
+    print(
+        f"Результат залежить від даних, які ми використовуємо. Але в середньому Greedy швидший за Min coins."
+    )
+    print(
+        f"Greedy побудований на жадібності, тому він не завжди дає оптимальний результат."
+    )
+    print(
+        f"Min coins побудований з використанням динамічного програмування і може давати більш точний результат."
     )

@@ -1,9 +1,11 @@
 # goit-algo-hw-09
 
-| Algorithm | Time to complete |
+| Алгоритм  | Час на виконання |
 | --------- | ---------------- |
-| Greedy    | 0.02520          |
-| Min coins | 11.32267         |
+| Greedy    | 0.01332          |
+| Min coins | 20.54955         |
 
-Greedy is 449.39 times faster than min coins.
-The result depends on the input. But anyway the greedy is much faster.
+Greedy в 1542.47 разів швидший за Min coins.
+Результат залежить від даних, які ми використовуємо. Але в середньому Greedy швидший за Min coins.  
+Greedy побудований на жадібності, тому він не завжди дає оптимальний результат.
+Min coins побудований з використанням динамічного програмування і може давати більш точний результат.
